@@ -1,0 +1,32 @@
+[project]
+name = "m2"
+version = "0.1.0"
+authors = [
+    {name = "Levin Eric Zimmermann", email = "levin.eric.zimmermann@posteo.eu"},
+]
+description = "convenience wrapper around mutwo ecosystem"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    # Don't pin mutwo library versions - dependency
+    # resolution automatically picks newest compatible
+    # packages. If user needs specific version, this user
+    # should pin themselves the versions.
+    "mutwo.abjad",
+    "mutwo.core",
+    "mutwo.common",
+    "mutwo.csound",
+    "mutwo.ekmelily",
+    "mutwo.midi",
+    "mutwo.mmml",
+    "mutwo.music",
+    "mutwo.reaper",
+    "mutwo.timeline",
+    'importlib-metadata; python_version<"3.10"',
+]
+
+[project.license]
+text = "GPL"
+
+[tool.setuptools]
+packages = ["m2"]
