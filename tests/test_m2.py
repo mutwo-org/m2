@@ -24,3 +24,12 @@ def test_m2_libraries():
     assert m2.EventToReaperMarkerString
     # mutwo.timeline
     assert m2.EventPlacement
+
+
+def test_event_abbreviations():
+    """Ensure stability of API"""
+
+    assert m2.cns == m2.Consecution
+    assert m2.cnc == m2.Concurrence
+    assert m2.chn == m2.Chronon
+    assert m2.n == m2.NoteLike

@@ -30,4 +30,5 @@ from mutwo.timeline_converters import *
 from mutwo.timeline_interfaces import *
 from mutwo.timeline_utilities import *
 
+from .events import *
 from .parameters import *
